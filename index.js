@@ -13,7 +13,8 @@ const app = express();
 // Middleware to handle CORS
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || "http://localhost:5173",
+   // origin: process.env.CLIENT_URL || "http://localhost:5173",
+   origin: process.env.CLIENT_URL || "https://resume-builder-chi-blush.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
